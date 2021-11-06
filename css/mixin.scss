@@ -1,0 +1,62 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin ellipse1 {
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  left: -114px;
+  top: -54px;
+  background: rgba(247, 222, 238, 0.9);
+  filter: blur(100px);
+}
+
+@mixin ellipse2 {
+  position: absolute;
+  width: 288px;
+  height: 288px;
+  right: -40px;
+  bottom: -80px;
+  background: rgba(255, 237, 99, 0.3);
+  filter: blur(100px);
+}
+
+@mixin container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+$heading: "InterRegular";
+$p: "InterRegular";
+$transition: all 0.3s ease-in-out;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  font-family: "InterRegular";
+}
+
+p,
+li {
+  font-family: "InterRegular";
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+$lightPink: " rgba(247, 222, 238, 0.9)";
+$yellowLight: "rgba(255, 237, 99, 0.3)";
+$YellowSolid: "#FFFACF";
