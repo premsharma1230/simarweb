@@ -70,7 +70,7 @@
     <!-- Experience -->
     <section class="Experience-Wrapper" id="Experience">
       <div class="container">
-        <div class="Experience-content slider owl-carousel">
+        <div class="Experience-content slider1 owl-carousel">
           <div class="item1">
             <div class="experience_heading">
               <figure>
@@ -274,7 +274,7 @@
               <li></li>
               <li></li>
             </ul>
-            <div class="Blog-Power slider owl-carousel">
+            <div class="Blog-Power slider2 owl-carousel">
               <div class="Sub_Blog 1">
               <div class="blog-left">
                 <figure>
@@ -411,14 +411,33 @@
     e.preventDefault();
     $(".Nav_Wrapper").slideToggle();
   });
-    $(".slider").owlCarousel({
+    $(".slider2").owlCarousel({
       loop: true,
       margin: 0,
       autoplay: false,
       nav: true,
       autoplayTimeout: 4000,
-      smartSpeed: 1500,
-      // animateOut: "scroll",
+      smartSpeed: 1500, 
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
+      },
+    });
+    $(".slider1").owlCarousel({
+      loop: true,
+      margin: 0,
+      autoplay: false,
+      nav: true,
+      autoplayTimeout: 4000,
+      smartSpeed: 1500, 
       dots: false,
       responsive: {
         0: {
