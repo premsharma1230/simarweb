@@ -128,7 +128,7 @@ main {
         text-align: left;
         a {
           color: #121212;
-          font-family: "InterRegular";
+          font-family: "AndadaSC";
           text-decoration: none;
           font-size: 1.4em;
           font-weight: 500;
@@ -655,10 +655,22 @@ main {
       left: -180px !important;
       top: -70px !important;
     }
+    h2 {
+      font-family: "PlayfairDisplay";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2em;
+      line-height: 150%;
+      color: #121212;
+    }
+    .About-heading1 {
+      display: none;
+    }
     .About_content {
       @include flex;
       justify-content: space-between;
       grid-gap: 0.5rem;
+
       .About-left {
         width: 60%;
         h2 {
@@ -740,14 +752,19 @@ main {
         }
       }
       .copy-right {
-        display: grid;
-        grid-template-columns: 1fr 400px;
+        // display: grid;
+        // grid-template-columns: 1fr 400px;
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-gap: 0.5rem;
         padding: 1rem 0 0;
         .cpy1 {
           display: grid;
           grid-template-columns: repeat(2, max-content);
           grid-gap: 0.5rem;
           align-items: center;
+          width: 70%;
           p {
             font-size: 14px;
             color: #ffffff;
@@ -773,6 +790,7 @@ main {
         }
         .cpy2 {
           text-align: right;
+          width: 25%;
           a {
             display: grid;
             grid-template-columns: repeat(2, max-content);
@@ -791,4 +809,9 @@ main {
       }
     }
   }
+  .main-bar {
+    display: none;
+  }
 }
+
+@import "media";

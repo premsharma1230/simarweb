@@ -93,3 +93,15 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "AndadaSC";
+  src: url("AndadaSC-Regular.eot");
+  src: url("AndadaSC-Regular.eot?#iefix") format("embedded-opentype"),
+    url("AndadaSC-Regular.woff2") format("woff2"),
+    url("AndadaSC-Regular.woff") format("woff"),
+    url("AndadaSC-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

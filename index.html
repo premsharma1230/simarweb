@@ -25,7 +25,7 @@
           <div class="logo">
             <a href="#">simarpreet</a href="#">
           </div>
-          <div class="Nav_Wrapper">
+          <div class="Nav_Wrapper" >
             <ul class="Nav_items">
               <li class="nav-item"><a href="#">Home </a></li>
               <li class="nav-item"><a href="#Experience">Experience</a></li>
@@ -38,6 +38,11 @@
           <div class="let_Wrp">
             <a href="tel:9625001862">Let's talk</a>
           </div>
+          <div class="main-bar">
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+        </div>
         </nav>
       </div>
     </header>
@@ -130,19 +135,19 @@
           </div>
           <div class="project_item1 project_itemCmn">
 
-            <div class="project1 project-cmn">
-              <h3>Redesigning Internshala’s careers page</h3>
-              <span>(LIVE WEBSITE)</span>
+            <div class="project1 project-cmn"> 
               <div class="SubChild">
                 <div class="Left-item">
+                  <h3>Redesigning Internshala’s careers page</h3>
+                  <span>(LIVE WEBSITE)</span>
                   <p>Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s,
                     when an unknown printer took</p>
                   <div class="Group-btn">
-                    <a href="#" class="btn">Medium</a>
-                    <a href="#" class="btn">Internshala website</a>
-                    <a href="#" class="btn">Research</a>
+                    <a href="#" class="btn1">Medium</a>
+                    <a href="#" class="btn2">Internshala website</a>
+                    <a href="#" class="btn3">Research</a>
                   </div>
                 </div>
                 <div class="Right-item">
@@ -165,7 +170,7 @@
                   <div class="Group-btn">
                     <a href="#" class="btn">App Store</a>
                     <a href="#" class="btn">Play Store</a>
-                    <a href="#" class="btn">Behance</a>
+                    <a href="#" class="btn3">Behance</a>
                   </div>
                 </div>
                 <div class="Right-item">
@@ -211,7 +216,7 @@
                     when an unknown printer took</p>
                   <div class="Group-btn">
                     <a href="#" class="btn">App Store</a>
-                    <a href="#" class="btn">Behance</a>
+                    <a href="#" class="btn3">Behance</a>
                   </div>
                 </div>
                 <div class="Right-item">
@@ -321,11 +326,13 @@
        <div class="ellipse1"></div>
        <div class="ellipse2"></div>
        <div class="container">
+        <h2 class="About-heading1">Adding Graphics to Life : <br>
+          Simarpreet Kaur</h2>
            <div class="About_content">
                <div class="About-left">
-                     <h2>Adding Graphics to Life : <br>
+                     <h2 class="About-heading2">Adding Graphics to Life : <br>
                        Simarpreet Kaur</h2>
-                       <p>“In life, you don’t have one big failure but many small failures”, says Simarpreet Kaur during an interview with Inked Stories.
+                       <p>“In life, you don’t have one big failure but many small failures”, says Simarpreet Kaur during an interview with  <b style="color:#b84792;font-weight: 500;">Inked Stories.</b>
                         Brought up in Delhi, Simarpreet has been a Computer Science student aiming for success from the very start. She comes as a passionate and career-oriented person who wants to excel in whatever she does. 
                         She has been a pen and paper artist since childhood and mentions that art comes to her naturally......
                         
@@ -386,8 +393,9 @@
 
   <!-- script---section -->
   <script src="js/jquery.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/owl.carousel.min.js"></script> 
   <script src="js/wow.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -398,7 +406,11 @@
     AOS.init();
   </script>
   <script>
-
+  $(".main-bar").click(function (e) {
+    $(this).toggleClass("activefile");
+    e.preventDefault();
+    $(".Nav_Wrapper").slideToggle();
+  });
     $(".slider").owlCarousel({
       loop: true,
       margin: 0,
@@ -407,6 +419,7 @@
       autoplayTimeout: 4000,
       smartSpeed: 1500,
       // animateOut: "scroll",
+      dots: false,
       responsive: {
         0: {
           items: 1,

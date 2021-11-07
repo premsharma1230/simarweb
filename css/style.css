@@ -175,7 +175,7 @@ main header nav .logo {
 
 main header nav .logo a {
   color: #121212;
-  font-family: "InterRegular";
+  font-family: "AndadaSC";
   text-decoration: none;
   font-size: 1.4em;
   font-weight: 500;
@@ -879,6 +879,19 @@ main .About_Wrapper .ellipse2 {
   top: -70px !important;
 }
 
+main .About_Wrapper h2 {
+  font-family: "PlayfairDisplay";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 150%;
+  color: #121212;
+}
+
+main .About_Wrapper .About-heading1 {
+  display: none;
+}
+
 main .About_Wrapper .About_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -997,10 +1010,22 @@ main footer .footer-content .Social_media li a:hover {
 }
 
 main footer .footer-content .copy-right {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 400px;
-      grid-template-columns: 1fr 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+  grid-gap: 0.5rem;
   padding: 1rem 0 0;
 }
 
@@ -1014,6 +1039,7 @@ main footer .footer-content .copy-right .cpy1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 70%;
 }
 
 main footer .footer-content .copy-right .cpy1 p {
@@ -1045,6 +1071,7 @@ main footer .footer-content .copy-right .cpy1 a:hover {
 
 main footer .footer-content .copy-right .cpy2 {
   text-align: right;
+  width: 25%;
 }
 
 main footer .footer-content .copy-right .cpy2 a {
@@ -1068,5 +1095,453 @@ main footer .footer-content .copy-right .cpy2 a:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 0.79;
+}
+
+main .main-bar {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  main header nav .logo {
+    width: 19%;
+    text-align: left;
+  }
+  main header {
+    height: 63px;
+  }
+  main header nav .Nav_items li {
+    font-size: 15px;
+    padding: 1.1rem 0;
+  }
+  main header nav .let_Wrp a {
+    padding: 10px 19px;
+    font-size: 15px;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn h3 {
+    font-size: 35px;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn {
+    padding: 2rem 2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .let_Wrp {
+    display: none;
+  }
+  .main-bar {
+    right: 40px;
+    top: 18px;
+    display: block !important;
+    cursor: pointer;
+    position: absolute;
+  }
+  .main-bar div {
+    width: 35px;
+    height: 4px;
+    margin: 6px 0;
+    background-image: linear-gradient(45deg, #292929, #292929);
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+  }
+  .main-bar.activefile {
+    top: 27px !important;
+  }
+  .activefile .a {
+    -webkit-transform: rotateZ(43deg);
+            transform: rotateZ(43deg);
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  .activefile .b {
+    opacity: 0;
+  }
+  .activefile .c {
+    -webkit-transform: rotateZ(-46deg);
+    transform: rotateZ(-46deg);
+    top: 0px;
+    position: absolute;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    margin: 6px 0 0 0px;
+  }
+  .Nav_Wrapper {
+    display: none;
+    position: absolute;
+    top: 62px;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    border-bottom: 3px solid #292929;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .Nav_Wrapper ul li {
+    display: block;
+  }
+  .Nav_Wrapper .Nav_items {
+    display: block;
+  }
+  .Nav_Wrapper .Nav_items li {
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    padding: 0.9rem 0;
+  }
+  main .Banner_Wrapper {
+    padding: 6rem 0 2rem;
+  }
+  main .Banner_Wrapper .Banner_content .banner_img figure {
+    height: auto;
+  }
+  main .Banner_Wrapper .Banner_content .banner_img figure img {
+    max-width: 70%;
+  }
+  main .Experience-Wrapper .Experience-content .about-text {
+    padding: 2rem 0 2rem;
+  }
+  main .Experience-Wrapper .Experience-content .about-text p {
+    font-size: 1em;
+  }
+  main .Experience-Wrapper .Experience-content .experience_heading figure img {
+    max-width: 60%;
+  }
+  main .Experience-Wrapper .Experience-content .experience_heading figcaption h3 {
+    font-size: 18px;
+  }
+  main .Experience-Wrapper .Experience-content .experience_heading figcaption span {
+    font-size: 13px;
+  }
+  main .Experience-Wrapper .Experience-content {
+    padding: 1.5rem 1.5rem 0.5rem;
+  }
+  main .Experience-Wrapper .Experience-content .owl-nav button {
+    width: 40px;
+    height: 40px;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn h3,
+  main .projects_Wrapper .project_itemCmn .project2 .Left-item h3 {
+    font-size: 28px;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn .Left-item .Group-btn a {
+    font-size: 14px;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn .Left-item p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .Experience-Wrapper .Experience-content .about-text {
+    padding: 1rem 0;
+  }
+  main .Experience-Wrapper .Experience-content .about-text p {
+    font-size: 14px;
+  }
+  main .Experience-Wrapper .Experience-content .owl-dots {
+    display: none;
+  }
+  main .Experience-Wrapper .Experience-content {
+    padding: 1.3rem;
+  }
+  main .Experience-Wrapper .Experience-content .owl-nav button {
+    width: 35px;
+    height: 35px;
+  }
+  main .skill_Wrapper .Skill_heading h2 {
+    font-size: 1.5em;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn {
+    padding: 1.5rem;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn h3,
+  main .projects_Wrapper .project_itemCmn .project2 .Left-item h3 {
+    font-size: 24px;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn .Left-item .Group-btn {
+    grid: 0.5rem 1rem;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn .Right-item figure img {
+    max-width: 100%;
+  }
+  main .skill_Wrapper .skill_Content figure img {
+    max-width: 60%;
+  }
+  main .About_Wrapper .About_content .About-left h2 {
+    font-size: 24px;
+  }
+  main .About_Wrapper .About_content .About-left p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn .SubChild {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn .Left-item,
+  main .projects_Wrapper .project_itemCmn .project-cmn .Right-item {
+    width: 100%;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn .Right-item {
+    text-align: center;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn .Left-item {
+    padding: 1rem 0 0;
+  }
+  .project_item1 .btn1,
+  .project_item1 .btn3,
+  .btn3 {
+    display: none;
+  }
+  main .Blog_Wrapper .Blog-items-wrp .Blog-Power .blog-left,
+  main .Blog_Wrapper .Blog-items-wrp .Blog-Power .blog-right {
+    width: 100%;
+  }
+  main .Blog_Wrapper .ellipse1,
+  main .Blog_Wrapper .ellipse2 {
+    display: none;
+  }
+  main .Blog_Wrapper .owl-nav .owl-prev, main .Blog_Wrapper .owl-nav .owl-next,
+  main .Blog_Wrapper .owl-nav .owl-next {
+    position: absolute;
+    left: 80%;
+    top: inherit;
+    bottom: 20px;
+  }
+  main .Blog_Wrapper .owl-nav .owl-next {
+    right: 35px !important;
+    left: inherit !important;
+  }
+  main .Blog_Wrapper .Blog-items-wrp .Blog-Power .blog-right .read_btn a {
+    font-weight: 600;
+  }
+  .About_Wrapper .About-heading2 {
+    display: none;
+  }
+  .About_Wrapper .About-heading1 {
+    display: block !important;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 1.5rem;
+  }
+  .About_Wrapper .About-heading1 br {
+    display: none;
+  }
+  .About_Wrapper .About_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .About_Wrapper .About_content .About-left,
+  .About_Wrapper .About_content .About-right {
+    width: 100% !important;
+  }
+  main footer .footer-content .copy-right .cpy2,
+  .copy-right .cpy1 {
+    width: 100%;
+  }
+  main footer .footer-content .copy-right .cpy1 a {
+    padding: 0.4rem 1rem;
+    font-size: 12px;
+  }
+  main footer .footer-content .Social_media {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  main footer .footer-content .Social_media li a {
+    font-size: 14px;
+  }
+  main .About_Wrapper .About_content .About-left .ReadMore {
+    font-size: 14px;
+    padding: 0.4rem 1rem;
+    margin: 1rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main header {
+    -webkit-box-shadow: 0px 0px 8px #00000006;
+            box-shadow: 0px 0px 8px #00000006;
+  }
+  main .Banner_Wrapper .ellipse1,
+  main .Banner_Wrapper .ellipse2 {
+    width: 235px;
+    height: 190px;
+  }
+  main .Banner_Wrapper .Banner_content .banner_img figure img {
+    max-width: 100%;
+  }
+  main .Banner_Wrapper .Banner_content .banner-text img {
+    display: none;
+  }
+  main .Banner_Wrapper .Banner_content .banner_img figure {
+    width: 70%;
+  }
+  main .Experience-Wrapper {
+    padding: 1rem 0;
+  }
+  main .Experience-Wrapper .Experience-content .experience_heading figure img {
+    max-width: 100%;
+  }
+  main .Experience-Wrapper .Experience-content .experience_heading {
+    -ms-grid-columns: 40px max-content;
+        grid-template-columns: 40px -webkit-max-content;
+        grid-template-columns: 40px max-content;
+    grid-gap: 0.8rem;
+  }
+  main .Experience-Wrapper .Experience-content .experience_heading figcaption h3 {
+    font-size: 16px;
+  }
+  main .Experience-Wrapper .Experience-content .experience_heading figcaption span {
+    font-size: 12px;
+  }
+  main .skill_Wrapper .ellipse1,
+  main .skill_Wrapper .ellipse2 {
+    width: 193px;
+    height: 190px;
+  }
+  main .skill_Wrapper .skill_Content figure img {
+    max-width: 80%;
+  }
+  main .skill_Wrapper .Skill_heading h2 {
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn h3,
+  main .projects_Wrapper .project_itemCmn .project2 .Left-item h3 {
+    font-size: 20px;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn span {
+    font-size: 10px;
+    padding: 0.1rem 0;
+  }
+  main .Blog_Wrapper {
+    padding: 1rem 0 2rem;
+  }
+  main .Blog_Wrapper .Blog-items-wrp .Blog-Power .blog-right p {
+    font-size: 14px;
+  }
+  main .Blog_Wrapper .Blog-items-wrp .Blog-Power .blog-right h4 {
+    padding: 0.4rem 0;
+    font-size: 13px;
+  }
+  main .Blog_Wrapper .owl-nav .owl-prev, main .Blog_Wrapper .owl-nav .owl-next,
+  main .Blog_Wrapper .owl-nav .owl-next,
+  main .Blog_Wrapper .owl-nav .owl-next {
+    bottom: 10px;
+  }
+  main .Blog_Wrapper .Blog-items-wrp .Blog-Power .blog-right h3 {
+    font-size: 1.3em;
+    padding: 1.3rem 0 0;
+  }
+  main .Blog_Wrapper .Blog-items-wrp .Blog-Power .Sub_Blog {
+    padding: 0.5rem;
+  }
+  main .Blog_Wrapper .Blog-items-wrp {
+    padding: 0.5rem;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn .Left-item p {
+    font-size: 14px;
+    padding: 0.5rem 0 0;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn .Left-item .Group-btn {
+    padding: 1rem 0 0;
+  }
+  main .projects_Wrapper .project_itemCmn .project-cmn .Left-item .Group-btn a {
+    font-size: 13px;
+  }
+  main .Blog_Wrapper .Blog-items-wrp {
+    width: 100%;
+  }
+  main .About_Wrapper .About_content .about-right figure img {
+    max-width: 100%;
+  }
+  .About_Wrapper .About-heading1 {
+    font-size: 1.2em;
+  }
+  main .About_Wrapper .About_content .About-left p {
+    font-size: 13px;
+  }
+  main footer .footer-content .copy-right .cpy1 {
+    -ms-grid-columns: max-content;
+        grid-template-columns: -webkit-max-content;
+        grid-template-columns: max-content;
+  }
+  main footer .footer-content .copy-right .cpy1 a {
+    width: 140px;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  main footer .footer-content .Social_media {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  main footer .footer-content .Social_media li span {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  main footer .footer-content .Social_media li:nth-child(even) a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 13px;
+  }
+  main footer {
+    padding: 1rem 0 2rem;
+  }
+  main .About_Wrapper .About_content .about-right {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-bar {
+    right: 20px;
+    top: 19px;
+  }
+  .main-bar div {
+    width: 33px;
+    height: 3px;
+    margin: 5px 0;
+  }
+  .Nav_Wrapper .Nav_items li {
+    padding: 0.5rem 0;
+    font-size: 14px;
+  }
+  main .Experience-Wrapper .Experience-content .experience_heading figcaption h3 {
+    font-size: 15px;
+  }
+  main .Experience-Wrapper .Experience-content .about-text p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  main footer .footer-content .Social_media li a {
+    font-size: 13px;
+  }
+  main .projects_Wrapper {
+    padding: 1rem 0;
+  }
+  main .Blog_Wrapper .owl-nav .owl-prev, main .Blog_Wrapper .owl-nav .owl-next,
+  main .Blog_Wrapper .owl-nav .owl-next,
+  main .Blog_Wrapper .owl-nav .owl-next {
+    left: 74%;
+  }
+  main footer .footer-content .copy-right .cpy1 p {
+    font-size: 12px;
+    word-break: break-all;
+  }
+  main footer .footer-content .Social_media li a {
+    font-size: 13px;
+  }
+  main .About_Wrapper .About_content .about-right {
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
